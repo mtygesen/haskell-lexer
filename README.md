@@ -3,10 +3,15 @@
 ### Requires
 - GHC
 - Alex
-### Compile 
 
+### Compile Lexer Definition
 ```bash
-alex Lexer.x -g && ghc Lexer.hs -O2
+alex Lexer.x -g
+```
+
+### Compile Haskell Source
+```bash
+ghc Lexer.hs -O2
 ```
 
 ### Use on example.lang
@@ -14,7 +19,7 @@ alex Lexer.x -g && ghc Lexer.hs -O2
 ./Lexer example.lang
 ```
 
-### Generate DFA information
+### Generate DFA Information
 ```bash
 alex Lexer.x -i
 ```
