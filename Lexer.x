@@ -35,14 +35,12 @@ data Token
     = If
     | Else
     | Print
-
     -- Operators
     | Define
     | Arrow
     | ConstraintArrow
     | Cons
     | Equal
-
     -- Symbols
     | LParen
     | RParen
@@ -50,7 +48,6 @@ data Token
     | RSquare
     | Semicolon
     | Comma
-
     -- Literals
     | Wildcard
     | Identifier String
