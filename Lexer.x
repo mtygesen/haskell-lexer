@@ -52,7 +52,6 @@ data Token
     | Wildcard
     | Identifier String
     | Integer Int
-
     deriving (Eq, Show)
 
 main = do
