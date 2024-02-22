@@ -2,6 +2,6 @@
 filter: Eq a, Eq b => [a], b -> [a]
 filter([], _) = []
 filter(x:xs, target) = if x == target = x:filter(xs, target)
-               else = filter(xs, target)
+                       else = filter(xs, target)
 
 print(filter([1,2,2,3], 2)) # => [2,2]
