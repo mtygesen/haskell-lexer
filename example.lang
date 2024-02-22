@@ -1,0 +1,5 @@
+# Test
+filter: Eq a, Eq b => [a], b -> [a]
+filter([], _) = []
+filter(x:xs, target) = if x == target = x:filter(xs, target)
+               else = filter(xs, target)
